@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <a class="nav button" href="#new-product">New Product</a>
+        <a class="nav button" href="#product-table">Product Table</a>
+        <a class="nav button" href="#sold-table">Sold Table</a>
+
+
+    </nav>
+    <div class="top-title" id="new-product">
+        <h1>Product List</h1>
+        <form>
+            <div class="row">
+                <div class="six columns">
+                    <label for="itemName">Item Name:</label>
+                    <input class="u-full-width" type="text" id="itemName" name="itemName" required>
+    
+                </div>
+                <div class="six columns">
+                    <label for="itemType">Item Type:</label>
+                    <select class="u-full-width" name="itemType" id="itemType" required>
+                        <option value="cpu">CPU</option>
+                        <option value="gpu">GPU</option>
+                        <option value="mobo">MOBO</option>
+                        <option value="case">CASE</option>
+                        <option value="psu">PSU</option>
+                        <option value="other">OTHER</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six columns">
+                    <label for="itemCost">Item Cost AUD$:</label>
+                    <input class="u-full-width" type="number" id="itemCost" name="itemCost" required>
+                </div>
+                <div class="six columns">
+                    <button class="button-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="loading"><img src="ajax-loader.gif" alt="!loading!"></div>
+
+        <h3 id="product-table">Product Table</h3>
+        <table class="u-full-width" id="forSale">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Type</th>
+                    <th>Item Cost AUD$</th>
+                    <th>Margin %</th>
+                    <th>Sell For</th>
+                    <th>Sold Value AUD$</th>
+                    <th>Sold</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody class="tableone">
+                
+            </tbody>
+        </table>
+
+        <h3 id="sold-table">Sold Table</h3>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item Type</th>
+                    <th>Item Cost AUD$</th>
+                    <th>Sold Value AUD$</th>
+                    <th>Profit AUD$</th>
+                    <th>Profit %</th>
+                    <th>Unsold</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody class="tabletwo">
+                
+            </tbody>
+        </table>
+    </div>
+    
+
+
+    <script src="client.js"></script>
+</body>
+
+</html>
