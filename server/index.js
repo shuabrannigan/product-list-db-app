@@ -5,7 +5,7 @@ const monk = require("monk");
 const app = express();
 
 const db = monk(
-  "mongodb+srv://shuaBrannigan:100099601Aa.@fullstack-test-irxgc.mongodb.net/PTtest?retryWrites=true&w=majority"
+
 );
 
 const sellFor = db.get("tableone");
