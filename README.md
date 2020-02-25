@@ -5,14 +5,14 @@ This project is my follow up to my Basic-Full-Stack-App; I wanted to take the co
 
 This application is based on the concept of buying and selling computer parts, the user inputs the items **Name**, **Type** and **Cost**.
 
-The application then takes that information and stores it within the database, giving it values for **Sold Value** and **Sold Status*.
+The application then takes that information and stores it within the database, giving it values for **Sold Value** and **Sold Status**.
 
-The information is then fetched and put into a table, at this point functions for working out *margin* and *margin %* are calculated.
+The information is then fetched and put into a table, at this point functions for working out **margin** and **margin %** are calculated.
 
-The user can then mark the item as *Sold* or *Delete*. Marking the item **Sold** will update the values stored in the db and move the
-item to the **Sold Table**, if the user selects to *Delete* the item, this removes the item from the table and the db.
+The user can then mark the item as **Sold** or **Delete**. Marking the item **Sold** will update the values stored in the db and move the
+item to the **Sold Table**, if the user selects to **Delete** the item, this removes the item from the table and the db.
 
-When the item is moved to the **Sold Table** the table item now displays the **Profit Made** and the **Profit %*.
+When the item is moved to the **Sold Table** the table item now displays the **Profit Made** and the **Profit %**.
 
 From here the user can mark the item as *Unsold* which will put the item back into the *For Sale* table, reverting the items **Sold Value**
 and **Sold Status**.
